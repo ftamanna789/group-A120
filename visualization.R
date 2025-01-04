@@ -12,8 +12,9 @@ boxplot(Value ~ LOCATION, data = filtered_df,
         xlab = "LOCATION",
         ylab = "Value of Renewable Energy Production",
         xlim=c(0,3),
-        ylim=c(0,8400))
-hist(filtered_df$Value, 
+        ylim=c(0,8400),
+        col="green")
+hist(filtered_df$Value,
      main = "Histogram of Production of Renewable Energy",
      xlab = "Value of Renewable Energy Production",
      ylab = "Frequency",
@@ -24,3 +25,4 @@ hist(filtered_df$Value,
      
      probability = TRUE)
 lines(density(filtered_df$Value), col = "black", lwd = 2)
+
